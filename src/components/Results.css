@@ -1,0 +1,118 @@
+.results-section {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.results-section.full-page {
+  margin-top: 40px;
+}
+
+.results-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.results-list.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.result-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #ffc107;
+  transition: all 0.3s ease;
+}
+
+.result-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px);
+}
+
+.result-competition {
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffc107;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.result-match {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  gap: 15px;
+}
+
+.team {
+  flex: 1;
+  text-align: center;
+}
+
+.team-name {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a472a;
+  word-break: break-word;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.score-number {
+  font-size: 28px;
+  color: #1a472a;
+  min-width: 40px;
+  text-align: center;
+}
+
+.score-separator {
+  font-size: 20px;
+  color: #ccc;
+}
+
+.result-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0;
+  font-size: 12px;
+  color: #666;
+}
+
+.date-time {
+  font-weight: 600;
+  color: #1a472a;
+}
+
+.stadium {
+  font-size: 11px;
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .result-card {
+    padding: 15px;
+  }
+
+  .score-number {
+    font-size: 24px;
+  }
+
+  .team-name {
+    font-size: 14px;
+  }
+}
